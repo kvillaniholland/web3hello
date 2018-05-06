@@ -12,9 +12,7 @@ class GreetingForm extends Component {
     };
   }
 
-  handleChange = (e) => {
-    this.setState({greeting: e.target.value});
-  }
+  handleChange = e => this.setState({greeting: e.target.value});
 
   submit = () => {
     const {greeting} = this.state;
@@ -30,7 +28,6 @@ class GreetingForm extends Component {
         <FormControl
           value={greeting}
           placeholder="Enter greeting"
-          label="Greeting"
           onChange={this.handleChange}
         />{' '}
         <Button
